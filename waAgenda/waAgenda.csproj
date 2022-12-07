@@ -71,9 +71,18 @@
     <Content Include="App_Data\AgendaDatabase_log.ldf">
       <DependentUpon>AgendaDatabase.mdf</DependentUpon>
     </Content>
+    <Content Include="assets\images\agenda.png" />
+    <Content Include="index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPageMain.Master.cs">
       <DependentUpon>MasterPageMain.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -93,6 +102,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
