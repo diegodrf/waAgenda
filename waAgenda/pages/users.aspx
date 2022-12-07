@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" DataSourceID="AgendaDataSource" InsertItemPosition="LastItem">
+    <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" DataSourceID="AgendaDataSource" InsertItemPosition="LastItem" OnItemInserted="ListView1_ItemInserted" OnItemUpdated="ListView1_ItemUpdated">
         <AlternatingItemTemplate>
             <tr style="background-color:#FFF8DC;">
                 <td>
@@ -153,4 +153,7 @@
             <asp:Parameter Name="Id" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
+    <br />
+    <asp:Literal ID="litErrorMessage" runat="server"></asp:Literal>
+    <br />
 </asp:Content>

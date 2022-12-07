@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
+using waAgenda.utils;
 
 namespace waAgenda
 {
@@ -12,7 +9,17 @@ namespace waAgenda
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //UpdateControlName("DeleteButton", "Remover");
+            
+        }
+
+        protected void ListView1_ItemInserted(object sender, ListViewInsertedEventArgs e)
+        {
+            ExceptionHandlerHelper.Handle(e, litErrorMessage);
+        }
+
+        protected void ListView1_ItemUpdated(object sender, ListViewUpdatedEventArgs e)
+        {
+            ExceptionHandlerHelper.Handle(e, litErrorMessage);
         }
     }
 }
