@@ -99,6 +99,7 @@
     <Compile Include="pages\users.aspx.designer.cs">
       <DependentUpon>users.aspx</DependentUpon>
     </Compile>
+    <Compile Include="utils\ExceptionHandlerHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="pages\MasterPageMain.Master" />
