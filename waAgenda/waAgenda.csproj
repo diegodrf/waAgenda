@@ -78,6 +78,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
     <Compile Include="pages\contacts.aspx.cs">
       <DependentUpon>contacts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
