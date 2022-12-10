@@ -72,11 +72,19 @@
       <DependentUpon>AgendaDatabase.mdf</DependentUpon>
     </Content>
     <Content Include="assets\images\agenda.png" />
+    <Content Include="pages\contacts.aspx" />
     <Content Include="pages\index.aspx" />
     <Content Include="pages\users.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pages\contacts.aspx.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\contacts.aspx.designer.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
